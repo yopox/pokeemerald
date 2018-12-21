@@ -1,38 +1,33 @@
-# Pokémon Emerald
+# Fichiers utiles
 
-[![Build Status][travis-badge]][travis]
+- `src/data/trainers.h` : Liste des dresseurs
+- `src/data/trainer_parties.h` : Liste des équipes des dresseurs
+- `data/maps` : Metadata des maps
+- `data/layouts` : Mapping
+- `data/text/birch_speech.inc` : Texte d'explication au début d'une partie
+- `data/event_scripts.s` : Beaucoup de scripts
+- `src/data/pokemon/evolution.h` : Évolution des pokémon
+- `src/data/items.h` : Liste des objets avec leurs propriétés (prix, …)
+- `src/new_game.c` : Script de début de partie
 
-This is a disassembly of Pokémon Emerald.
+# TODO
 
-It builds the following rom:
+## MISC
 
-* pokeemerald.gba `sha1: f3ae088181bf583e55daf962a92bb46f4f1d07b7`
-
-To set up the repository, see [INSTALL.md](INSTALL.md).
-
-
-## See also
-
-* Disassembly of [**Pokémon Red/Blue**][pokered]
-* Disassembly of [**Pokémon Yellow**][pokeyellow]
-* Disassembly of [**Pokémon Gold**][pokegold]
-* Disassembly of [**Pokémon Crystal**][pokecrystal]
-* Disassembly of [**Pokémon Pinball**][pokepinball]
-* Disassembly of [**Pokémon TCG**][poketcg]
-* Disassembly of [**Pokémon Ruby**][pokeruby]
-* Disassembly of [**Pokémon Fire Red**][pokefirered]
-* Discord: [**pret**][Discord]
-* irc: **irc.freenode.net** [**#pret**][irc]
-
-[pokered]: https://github.com/pret/pokered
-[pokeyellow]: https://github.com/pret/pokeyellow
-[pokegold]: https://github.com/pret/pokegold
-[pokecrystal]: https://github.com/pret/pokecrystal
-[pokepinball]: https://github.com/pret/pokepinball
-[poketcg]: https://github.com/pret/poketcg
-[pokeruby]: https://github.com/pret/pokeruby
-[pokefirered]: https://github.com/pret/pokefirered
-[Discord]: https://discord.gg/6EuWgX9
-[irc]: https://kiwiirc.com/client/irc.freenode.net/?#pret
-[travis]: https://travis-ci.org/pret/pokeemerald
-[travis-badge]: https://travis-ci.org/pret/pokeemerald.svg?branch=master
+- [ ] Misc
+    - [ ] Changer les évolutions par échange
+    - [ ] Changer le dialogue de départ
+    - [ ] Changer les options initiales (stereo, texte rapide)
+- [ ] v0.1
+    - [x] Enlever le script du camion
+    - [ ] Créer un groupe de maps
+    - [ ] Changer la position de départ du joueur
+    - [ ] Créer une map de test
+    - [ ] Hautes herbes random
+    - [ ] 1 Pokémon de départ random
+    - [ ] 1 Dresseur random
+    - [ ] 1 objet random au sol
+- [ ] v0.2
+    - [ ] Map mart / heal / pc / boss
+    - [ ] 100 étages successifs
+    - [ ] Panthéon à la fin
