@@ -135,7 +135,7 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    Overworld_SetWarpDestination(25, 40, -1, -1, -1); // inside of truck
+    Overworld_SetWarpDestination(34, 0, -1, 2, 6); // inside of truck
     WarpIntoMap();
 }
 

@@ -1,4 +1,4 @@
-SootopolisCity_Mart: @ 8483A98
+SootopolisCity_Mart::
 	.4byte Mart_Layout
 	.4byte SootopolisCity_Mart_MapEvents
 	.4byte SootopolisCity_Mart_MapScripts
@@ -12,4 +12,3 @@ SootopolisCity_Mart: @ 8483A98
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

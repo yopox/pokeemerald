@@ -20,11 +20,14 @@
     - [ ] Changer les options initiales (stereo, texte rapide)
 - [ ] v0.1
     - [x] Enlever le script du camion
-    - [ ] Créer un groupe de maps
-    - [ ] Changer la position de départ du joueur
+    - [x] Créer un groupe de maps
+    - [x] Changer la position de départ du joueur
+    - [x] Créer un lobby
+    - [x] Créer la boutique de départ
+    - [x] Éditer le script de choix du poké de départ
     - [ ] Créer une map de test
     - [ ] Hautes herbes random
-    - [ ] 1 Pokémon de départ random
+    - [ ] Pokémon de départ random
     - [ ] 1 Dresseur random
     - [ ] 1 objet random au sol
 - [ ] v0.2

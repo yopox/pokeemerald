@@ -439,3 +439,4 @@
 	.include "data/layouts/SootopolisCity_MysteryEventsHouse_1F/layout.inc"
 	.include "data/layouts/SootopolisCity_MysteryEventsHouse_B1F/layout.inc"
 	.include "data/layouts/UnknownMap_08481DBC/layout.inc"
+	.include "data/layouts/NewMap1/layout.inc"

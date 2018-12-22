@@ -901,9 +901,8 @@ static void CB2_GiveStarter(void)
     starterMon = GetStarterPokemon(gSpecialVar_Result);
     ScriptGiveMon(starterMon, 5, 0, 0, 0, 0);
     ResetTasks();
-    PlayBattleBGM();
-    SetMainCallback2(CB2_StartFirstBattle);
     BattleTransition_Start(B_TRANSITION_BLUR);
+    SetMainCallback2(CB2_StartFirstBattle);
 }
 
 static void CB2_StartFirstBattle(void)
@@ -913,16 +912,16 @@ static void CB2_StartFirstBattle(void)
 
     if (IsBattleTransitionDone() == TRUE)
     {
-        gBattleTypeFlags = BATTLE_TYPE_FIRST_BATTLE;
-        gMain.savedCallback = CB2_EndFirstBattle;
+        // gBattleTypeFlags = BATTLE_TYPE_FIRST_BATTLE;
+        // gMain.savedCallback = CB2_EndFirstBattle;
         FreeAllWindowBuffers();
-        SetMainCallback2(CB2_InitBattle);
+        SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
         RestartWildEncounterImmunitySteps();
         ClearPoisonStepCounter();
-        IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
-        IncrementGameStat(GAME_STAT_WILD_BATTLES);
-        sub_80EECC8();
-        sub_80B1218();
+        // IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
+        // IncrementGameStat(GAME_STAT_WILD_BATTLES);
+        // sub_80EECC8();
+        // sub_80B1218();
     }
 }
 
