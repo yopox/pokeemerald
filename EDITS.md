@@ -24,7 +24,7 @@ The infos are called `gLX_LandMons`, and `gLX_LandMonsInfo` for the level `X`.
 
 `src/data/trainers.h` (line 11971).
 
-The `Y`th trainer of the level `X` is called `TRAINER_LX_Y`. Its script is called `Level_X_TrainerY`.
+The `Y`th trainer of the level `X` is called `TRAINER_LX_Y`. Its script is called `Level_X_Trainer_Y`.
 
 `src/data/trainer_parties.h` (line 12438).
 
@@ -37,3 +37,10 @@ The trainer flags are called `FLAG_LX_Y`
 `include/constants/opponents.h` (line 860).
 
 Added the trainer names `TRAINER_LX_Y`, and updated the `TRAINERS_COUNT`.
+
+## Items
+
+`data/random_balls.inc`.
+
+The balls scripts are called `Level_X_Ball_Y`.
+The corresponding flags are called `FLAX_LX_BALL_Y`

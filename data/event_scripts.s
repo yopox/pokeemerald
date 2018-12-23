@@ -10610,6 +10610,8 @@ gText_082C877B:: @ 82C877B
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
 
+	.include "data/random_balls.inc"
+
 	.include "data/maps/Lobby/scripts.inc"
 	.include "data/maps/Lobby/text.inc"
 
