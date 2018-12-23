@@ -532,4 +532,6 @@
 	.include "data/maps/Route124_DivingTreasureHuntersHouse/events.inc"
 
 
-	.include "data/maps/NewMap1/events.inc"
+	.include "data/maps/Lobby/events.inc"
+
+	.include "data/maps/Level_1/events.inc"

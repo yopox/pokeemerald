@@ -1502,6 +1502,12 @@
 #define FLAG_0x95E               (SYSTEM_FLAGS + 0xFE)
 #define FLAG_0x95F               (SYSTEM_FLAGS + 0xFF)
 
+// RANDOMIZER FLAGS
+#define FLAG_L1_HIDDEN            0x1000
+#define FLAG_L1_1                 0x1001
+#define FLAG_L1_2                 0x1002
+
+
 #define SPECIAL_FLAGS_START 0x4000
 // SPECIAL FLAGS (unknown purpose)
 #define FLAG_SPECIAL_FLAG_0x4000    0x4000

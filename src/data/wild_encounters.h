@@ -3240,6 +3240,24 @@ const struct WildPokemon gMeteorFalls_StevensCave_LandMons[] =
 
 const struct WildPokemonInfo gMeteorFalls_StevensCave_LandMonsInfo = {10, gMeteorFalls_StevensCave_LandMons};
 
+const struct WildPokemon gL1_LandMons[] =
+{
+    {3, 3, SPECIES_POOCHYENA},
+    {3, 3, SPECIES_SHUPPET},
+    {3, 3, SPECIES_MIGHTYENA},
+    {5, 5, SPECIES_SHUPPET},
+    {5, 5, SPECIES_MIGHTYENA},
+    {3, 3, SPECIES_ODDISH},
+    {5, 5, SPECIES_ODDISH},
+    {5, 5, SPECIES_GLOOM},
+    {3, 3, SPECIES_WINGULL},
+    {2, 2, SPECIES_WINGULL},
+    {4, 4, SPECIES_WINGULL},
+    {1, 1, SPECIES_KECLEON},
+};
+
+const struct WildPokemonInfo gL1_LandMonsInfo = {5, gL1_LandMons};
+
 //The actual headers that link the encounter tables to particular maps start here.
 
 const struct WildPokemonHeader gWildMonHeaders[] =
@@ -4232,6 +4250,14 @@ const struct WildPokemonHeader gWildMonHeaders[] =
         .mapGroup = MAP_GROUP(METEOR_FALLS_STEVENS_CAVE),
         .mapNum = MAP_NUM(METEOR_FALLS_STEVENS_CAVE),
         .landMonsInfo = &gMeteorFalls_StevensCave_LandMonsInfo,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(LEVEL_1),
+        .mapNum = MAP_NUM(LEVEL_1),
+        .landMonsInfo = &gL1_LandMonsInfo,
         .waterMonsInfo = NULL,
         .rockSmashMonsInfo = NULL,
         .fishingMonsInfo = NULL,

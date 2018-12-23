@@ -516,4 +516,5 @@
 	.include "data/maps/Route119_WeatherInstitute_2F/header.inc"
 	.include "data/maps/Route119_House/header.inc"
 	.include "data/maps/Route124_DivingTreasureHuntersHouse/header.inc"
-	.include "data/maps/NewMap1/header.inc"
+	.include "data/maps/Lobby/header.inc"
+	.include "data/maps/Level_1/header.inc"

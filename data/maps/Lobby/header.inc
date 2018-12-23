@@ -1,7 +1,7 @@
-NewMap1::
-	.4byte NewMap1_Layout
-	.4byte NewMap1_MapEvents
-	.4byte NewMap1_MapScripts
+Lobby::
+	.4byte Lobby_Layout
+	.4byte Lobby_MapEvents
+	.4byte Lobby_MapScripts
 	.4byte 0x0
 	.2byte MUS_DAN02
 	.2byte 442

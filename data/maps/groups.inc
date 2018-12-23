@@ -620,7 +620,8 @@ gMapGroup33::
 
 	.align 2
 gMapGroup34::
-	.4byte NewMap1
+	.4byte Lobby
+	.4byte Level_1
 
 	.align 2
 gMapGroups::
