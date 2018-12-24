@@ -858,7 +858,9 @@
 #define TRAINER_MAY_16          854
 
 #define TRAINER_L1_1            855
+#define TRAINER_L2_1            856
+#define TRAINER_L2_2            857
 
-#define TRAINERS_COUNT          856
+#define TRAINERS_COUNT          858
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

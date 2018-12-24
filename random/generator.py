@@ -8,6 +8,7 @@ class Generator():
 
     def __init__(self):
         items.computeWeights()
+        levels.computeWeights()
         self.LEVEL_NB = 2
         self.BALL_PER_LEVEL = 2
         self.LEVEL_ORDER = [i for i in range(1, self.LEVEL_NB+1)]
@@ -66,3 +67,27 @@ Level_WarpMessage:
     .string \"Warp to the next level?$\"
 """
         return warps
+
+    def genTrainer(self, level, levelID, nPoke, trainerID):
+        """Generates a trainer."""
+        trainer = f"const struct TrainerMonItemDefaultMoves gTrainerParty_L{levelID}_{trainerID}[] = {{"
+        for i in range(nPoke):
+            pokemon = poke.getRandomPokemonOf(levels.getType(levelID - 1))
+            trainer += f"""
+{{
+    .iv = {random.randint(0, 255)},
+    .lvl = {level},
+    .species = {pokemon},
+    .heldItem = {items.getRandomItem()}
+}}"""
+            if i + 1 < nPoke:
+                trainer += ","
+        trainer += "};\n\n"
+        return trainer
+
+    def genTrainers(self):
+        trainers = ""
+        for i in range(len(self.LEVEL_ORDER)):
+            for j in range(len(levels.TRAINER_NB[self.LEVEL_ORDER[i] - 1])):
+                trainers += self.genTrainer(i+1, self.LEVEL_ORDER[i], levels.TRAINER_NB[self.LEVEL_ORDER[i] - 1][j], j+1)
+        return trainers

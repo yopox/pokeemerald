@@ -11980,6 +11980,34 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = 0,
         .partySize = 1,
-        .party = {.NoItemDefaultMoves = gTrainerParty_L1_1 }
+        .party = {.ItemDefaultMoves = gTrainerParty_L1_1 }
+    },
+
+    [TRAINER_L2_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_PSYCHIC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerName = _("FARID"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 3,
+        .party = {.ItemDefaultMoves = gTrainerParty_L2_1 }
+    },
+
+    [TRAINER_L2_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerName = _("REDA"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 2,
+        .party = {.ItemDefaultMoves = gTrainerParty_L2_2 }
     },
 };

@@ -12434,11 +12434,3 @@ const struct TrainerMonNoItemDefaultMoves gTrainerParty_May16[] = {
     .species = SPECIES_KYOGRE,
     }
 };
-
-const struct TrainerMonNoItemDefaultMoves gTrainerParty_L1_1[] = {
-    {
-    .iv = 0,
-    .lvl = 2,
-    .species = SPECIES_KYOGRE,
-    }
-};

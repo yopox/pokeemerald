@@ -8,6 +8,7 @@
 #include "constants/battle_ai.h"
 
 #include "data/trainer_parties.h"
+#include "../random/trainers.h"
 #include "data/text/trainer_class_names.h"
 #include "data/trainers.h"
 #include "data/text/species_names.h"

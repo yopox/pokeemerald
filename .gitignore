@@ -28,3 +28,5 @@ build/
 .DS_Store
 *.ddump
 random/__pycache__
+random/*.h
+random/*.inc
