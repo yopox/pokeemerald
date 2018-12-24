@@ -1504,7 +1504,8 @@
 
 // RANDOMIZER FLAGS
 #define FLAG_L1_BALL_1            0x1000
-#define FLAG_L1_TRAINER_1         0x1001
+#define FLAG_L1_BALL_2            0x1001
+#define FLAG_L1_TRAINER_1         0x1002
 
 #define SPECIAL_FLAGS_START 0x4000
 // SPECIAL FLAGS (unknown purpose)
