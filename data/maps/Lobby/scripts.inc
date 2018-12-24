@@ -53,17 +53,11 @@ Lobby_Bag::
 	end
 
 Lobby_RenameMessage:
-	.string "Give a nickname to your starter ?$"
+	.string "Give a nickname to your starter?$"
 
 Lobby_RenameScript:
 	fadescreen 1
 	special ChangePokemonNickname
 	waitstate
 	goto Lobby_TeleportScript
-	end
-	
-Lobby_TeleportScript:
-	warpteleport MAP_LEVEL_1, 255, 1, 6
-	waitstate
-	releaseall
 	end

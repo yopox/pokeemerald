@@ -518,3 +518,4 @@
 	.include "data/maps/Route124_DivingTreasureHuntersHouse/header.inc"
 	.include "data/maps/Lobby/header.inc"
 	.include "data/maps/Level_1/header.inc"
+	.include "data/maps/Level_2/header.inc"

@@ -40,7 +40,13 @@ Added the trainer names `TRAINER_LX_Y`, and updated the `TRAINERS_COUNT`.
 
 ## Items
 
-`data/random_balls.inc`.
+`data/random_scripts.inc` (`@ balls`).
 
 The balls scripts are called `Level_X_Ball_Y`.
-The corresponding flags are called `FLAX_LX_BALL_Y`
+The corresponding flags are called `FLAX_LX_BALL_Y`.
+
+## Warps
+
+`data/random_scripts.inc` (`@ warps`).
+
+The warp scripts are called `Level_X_Warp`.

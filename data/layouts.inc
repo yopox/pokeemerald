@@ -441,3 +441,4 @@
 	.include "data/layouts/UnknownMap_08481DBC/layout.inc"
 	.include "data/layouts/Lobby/layout.inc"
 	.include "data/layouts/Level_1/layout.inc"
+	.include "data/layouts/Level_2/layout.inc"

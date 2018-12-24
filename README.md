@@ -20,6 +20,7 @@
     - [ ] Changer les évolutions par échange
     - [ ] Changer le dialogue de départ
     - [ ] Changer les options initiales (stereo, texte rapide)
+    - [ ] Donner les chaussures de sport
 - [ ] v0.1
     - [x] Enlever le script du camion
     - [x] Créer un groupe de maps
@@ -27,12 +28,11 @@
     - [x] Créer un lobby
     - [x] Créer la boutique de départ
     - [x] Éditer le script de choix du poké de départ
-    - [x] Créer une map de test
+    - [x] Créer deux maps de test
     - [ ] Hautes herbes random
     - [ ] Pokémon de départ random
     - [ ] 1 Dresseur random
     - [x] 1 objet random au sol
 - [ ] v0.2
-    - [ ] Map mart / heal / pc / boss
-    - [ ] 100 étages successifs
-    - [ ] Panthéon à la fin
+    - [ ] Nombre de balls dépendant du level
+    - [ ] 10 levels

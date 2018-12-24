@@ -7,7 +7,7 @@ Level_1::
 	.2byte 443
 	.byte MAPSEC_LITTLEROOT_TOWN
 	.byte FALSE
-	.byte WEATHER_CLOUDS
+	.byte WEATHER_SUNNY
 	.byte MAP_TYPE_ROUTE
 	.2byte 0
 	.byte TRUE

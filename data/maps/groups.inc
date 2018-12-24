@@ -622,6 +622,7 @@ gMapGroup33::
 gMapGroup34::
 	.4byte Lobby
 	.4byte Level_1
+	.4byte Level_2
 
 	.align 2
 gMapGroups::

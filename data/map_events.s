@@ -535,3 +535,5 @@
 	.include "data/maps/Lobby/events.inc"
 
 	.include "data/maps/Level_1/events.inc"
+
+	.include "data/maps/Level_2/events.inc"

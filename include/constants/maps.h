@@ -590,6 +590,7 @@
 // Map Group 34
 #define MAP_LOBBY   (0 | (34 << 8))
 #define MAP_LEVEL_1 (1 | (34 << 8))
+#define MAP_LEVEL_2 (2 | (34 << 8))
 
 
 #define MAP_NONE (0x7F | (0x7F << 8))

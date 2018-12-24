@@ -443,3 +443,4 @@ gMapLayouts::
 	.4byte UnknownMap_08481DBC_Layout
 	.4byte Lobby_Layout
 	.4byte Level_1_Layout
+	.4byte Level_2_Layout
