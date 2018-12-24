@@ -29,9 +29,9 @@
     - [x] Créer la boutique de départ
     - [x] Éditer le script de choix du poké de départ
     - [x] Créer deux maps de test
-    - [ ] Hautes herbes random
+    - [x] Hautes herbes random
     - [ ] Pokémon de départ random
-    - [ ] 1 Dresseur random
+    - [x] 1 Dresseur random
     - [x] 1 objet random au sol
 - [ ] v0.2
     - [ ] Nombre de balls dépendant du level

@@ -40,6 +40,7 @@ static bool8 IsAbilityAllowingEncounter(u8 level);
 EWRAM_DATA static u8 sWildEncountersDisabled = 0;
 EWRAM_DATA static u32 sFeebasRngValue = 0;
 
+#include "../random/wild_encounters.h"
 #include "data/wild_encounters.h"
 
 // code

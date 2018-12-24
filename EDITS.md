@@ -16,9 +16,9 @@ The starting map is `MAP_LOBBY`, `Lobby`.
 
 ## Wild encounters
 
-`src/data/wild_encounters.h` (line 3243).
+`src/data/wild_encounters.h` (search for `.mapGroup = MAP_GROUP(LEVEL_1),`).
 
-The infos are called `gLX_LandMons`, and `gLX_LandMonsInfo` for the level `X`.
+The infos are called `gLX_LandMons`, and `gLX_LandMonsInfo` for the level `X`. These are stored in `random/wild_encounters.h`
 
 ## Trainers
 
@@ -26,7 +26,7 @@ The infos are called `gLX_LandMons`, and `gLX_LandMonsInfo` for the level `X`.
 
 The `Y`th trainer of the level `X` is called `TRAINER_LX_Y`. Its script is called `Level_X_Trainer_Y`.
 
-`src/data/trainer_parties.h` (line 12438).
+`random/trainers.h` (line 12438).
 
 The parties are called `gTrainerParty_LX_Y`.
 
@@ -40,13 +40,13 @@ Added the trainer names `TRAINER_LX_Y`, and updated the `TRAINERS_COUNT`.
 
 ## Items
 
-`data/random_scripts.inc` (`@ balls`).
+`random/scripts.inc` (`@ balls`).
 
 The balls scripts are called `Level_X_Ball_Y`.
 The corresponding flags are called `FLAX_LX_BALL_Y`.
 
 ## Warps
 
-`data/random_scripts.inc` (`@ warps`).
+`random/scripts.inc` (`@ warps`).
 
 The warp scripts are called `Level_X_Warp`.

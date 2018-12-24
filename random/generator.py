@@ -91,3 +91,21 @@ Level_WarpMessage:
             for j in range(len(levels.TRAINER_NB[self.LEVEL_ORDER[i] - 1])):
                 trainers += self.genTrainer(i+1, self.LEVEL_ORDER[i], levels.TRAINER_NB[self.LEVEL_ORDER[i] - 1][j], j+1)
         return trainers
+
+    def genEncounter(self, level, levelID):
+        we = f"""const struct WildPokemon gL{levelID}_LandMons[] =
+{{"""
+        for _ in range(12):
+            we += f"{{{level}, {level}, {poke.getRandomPokemonOf(levels.getType(levelID - 1))}}},"
+        we += f"""
+}};
+
+const struct WildPokemonInfo gL{levelID}_LandMonsInfo = {{{random.randint(5,15)}, gL{levelID}_LandMons}};
+"""
+        return we
+    
+    def genEncounters(self):
+        encounters = ""
+        for i in range(len(self.LEVEL_ORDER)):
+            encounters += self.genEncounter(i+1, self.LEVEL_ORDER[i])
+        return encounters
