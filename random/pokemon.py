@@ -24,6 +24,7 @@ class Type(IntEnum):
     TYPE_DRAGON = 16
     TYPE_DARK = 17
 
+
 ALL_POKE = [
     ["SPECIES_BULBASAUR",
      Type.TYPE_GRASS,

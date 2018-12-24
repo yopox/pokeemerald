@@ -21,7 +21,8 @@
     - [ ] Changer le dialogue de départ
     - [ ] Changer les options initiales (stereo, texte rapide)
     - [ ] Donner les chaussures de sport
-- [ ] v0.1
+    - [ ] Enlever les items inutiles
+- [x] v0.1
     - [x] Enlever le script du camion
     - [x] Créer un groupe de maps
     - [x] Changer la position de départ du joueur
@@ -30,7 +31,7 @@
     - [x] Éditer le script de choix du poké de départ
     - [x] Créer deux maps de test
     - [x] Hautes herbes random
-    - [ ] Pokémon de départ random
+    - [x] Pokémon de départ random
     - [x] 1 Dresseur random
     - [x] 1 objet random au sol
 - [ ] v0.2

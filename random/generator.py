@@ -22,11 +22,11 @@ Level_{level}_Ball_{id}::
 """
 
     def genBalls(self):
-        balls = "@ balls\n\n"
+        balls = "@ balls\n"
         for x in self.LEVEL_ORDER:
             for y in range(self.BALL_PER_LEVEL):
                 balls += self.genBall(x, y+1)
-        return balls
+        return balls + "\n"
 
     def genWarp(self, lvl, nextLvl):
         return f"""
@@ -47,7 +47,7 @@ Level_{lvl}_TeleportScript:
 """
 
     def genWarps(self):
-        warps = "@ warps\n\n"
+        warps = "@ warps\n"
         # Lobby to the first level
         l1 = self.LEVEL_ORDER[0]
         warps += f"""
@@ -66,7 +66,7 @@ Lobby_TeleportScript::
 Level_WarpMessage:
     .string \"Warp to the next level?$\"
 """
-        return warps
+        return warps + "\n"
 
     def genTrainer(self, level, levelID, nPoke, trainerID):
         """Generates a trainer."""
@@ -82,30 +82,39 @@ Level_WarpMessage:
 }}"""
             if i + 1 < nPoke:
                 trainer += ","
-        trainer += "};\n\n"
+        trainer += "};\n"
         return trainer
 
     def genTrainers(self):
         trainers = ""
         for i in range(len(self.LEVEL_ORDER)):
             for j in range(len(levels.TRAINER_NB[self.LEVEL_ORDER[i] - 1])):
-                trainers += self.genTrainer(i+1, self.LEVEL_ORDER[i], levels.TRAINER_NB[self.LEVEL_ORDER[i] - 1][j], j+1)
-        return trainers
+                trainers += self.genTrainer(
+                    i+1, self.LEVEL_ORDER[i], levels.TRAINER_NB[self.LEVEL_ORDER[i] - 1][j], j+1)
+        return trainers + "\n"
 
     def genEncounter(self, level, levelID):
         we = f"""const struct WildPokemon gL{levelID}_LandMons[] =
 {{"""
         for _ in range(12):
-            we += f"{{{level}, {level}, {poke.getRandomPokemonOf(levels.getType(levelID - 1))}}},"
+            we += f"{{{level}, {level}, {poke.getRandomPokemonOf(levels.getType(levelID - 1))}}},\n"
         we += f"""
 }};
 
 const struct WildPokemonInfo gL{levelID}_LandMonsInfo = {{{random.randint(5,15)}, gL{levelID}_LandMons}};
 """
         return we
-    
+
     def genEncounters(self):
         encounters = ""
         for i in range(len(self.LEVEL_ORDER)):
             encounters += self.genEncounter(i+1, self.LEVEL_ORDER[i])
-        return encounters
+        return encounters + "\n"
+
+    def getStarters(self):
+        starters = ""
+        for i in range(3):
+            starters += poke.getRandomPokemon()
+            if i < 2:
+                starters += ",\n    "
+        return starters + "\n"

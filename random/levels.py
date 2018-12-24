@@ -12,7 +12,7 @@ WEIGHT = [0 for pt in POSSIBLE_TYPES]
 
 STARTING_POS = [
     [10, 17],
-    [10, 3]
+    [2, 6]
 ]
 
 # TRAINER_NB[level] gives the size of the level trainers' parties
