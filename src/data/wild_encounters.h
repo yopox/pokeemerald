@@ -4253,6 +4253,14 @@ const struct WildPokemonHeader gWildMonHeaders[] =
         .fishingMonsInfo = NULL,
     },
     {
+        .mapGroup = MAP_GROUP(LEVEL_3),
+        .mapNum = MAP_NUM(LEVEL_3),
+        .landMonsInfo = &gL3_LandMonsInfo,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
         .mapGroup = MAP_GROUP(UNDEFINED),
         .mapNum = MAP_NUM(UNDEFINED),
         .landMonsInfo = NULL,

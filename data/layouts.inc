@@ -442,3 +442,4 @@
 	.include "data/layouts/Lobby/layout.inc"
 	.include "data/layouts/Level_1/layout.inc"
 	.include "data/layouts/Level_2/layout.inc"
+	.include "data/layouts/Level_3/layout.inc"

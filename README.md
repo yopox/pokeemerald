@@ -35,5 +35,6 @@
     - [x] 1 Dresseur random
     - [x] 1 objet random au sol
 - [ ] v0.2
-    - [ ] Nombre de balls dépendant du level
+    - [x] Nombre de balls dépendant du level
     - [ ] 10 levels
+    - [ ] Afficher le numéro de route

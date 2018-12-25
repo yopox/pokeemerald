@@ -1510,6 +1510,12 @@
 #define FLAG_L2_BALL_2            0x1011
 #define FLAG_L2_TRAINER_1         0x1012
 #define FLAG_L2_TRAINER_2         0x1013
+#define FLAG_L3_BALL_1            0x1020
+#define FLAG_L3_BALL_2            0x1021
+#define FLAG_L3_BALL_3            0x1022
+#define FLAG_L3_TRAINER_1         0x1023
+#define FLAG_L3_TRAINER_2         0x1024
+#define FLAG_L3_TRAINER_3         0x1025
 
 #define SPECIAL_FLAGS_START 0x4000
 // SPECIAL FLAGS (unknown purpose)

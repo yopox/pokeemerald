@@ -12010,4 +12010,46 @@ const struct Trainer gTrainers[] = {
         .partySize = 2,
         .party = {.ItemDefaultMoves = gTrainerParty_L2_2 }
     },
+
+    [TRAINER_L3_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerName = _("LEANA"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 1,
+        .party = {.ItemDefaultMoves = gTrainerParty_L3_1 }
+    },
+
+    [TRAINER_L3_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GENTLEMAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerName = _("BERNARD"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 4,
+        .party = {.ItemDefaultMoves = gTrainerParty_L3_2 }
+    },
+
+    [TRAINER_L3_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerName = _("HALEY"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 2,
+        .party = {.ItemDefaultMoves = gTrainerParty_L3_3 }
+    },
 };

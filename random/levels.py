@@ -5,20 +5,23 @@ global POSSIBLE_TYPES, WEIGHT, STARTING_POS, TRAINER_NB
 
 POSSIBLE_TYPES = [
     [[Type.TYPE_FLYING, 2], [Type.TYPE_GRASS, 1], [Type.TYPE_NORMAL, 5]],
-    [[Type.TYPE_GHOST, 4], [Type.TYPE_PSYCHIC, 2], [Type.TYPE_DARK, 1]]
+    [[Type.TYPE_GHOST, 4], [Type.TYPE_PSYCHIC, 2], [Type.TYPE_DARK, 1]],
+    [[Type.TYPE_GHOST, 1], [Type.TYPE_NORMAL, 3], [Type.TYPE_DARK, 2], [Type.TYPE_GRASS, 3], [Type.TYPE_FLYING, 1]],
 ]
 
 WEIGHT = [0 for pt in POSSIBLE_TYPES]
 
 STARTING_POS = [
     [10, 17],
-    [2, 6]
+    [2, 6],
+    [4, 10]
 ]
 
 # TRAINER_NB[level] gives the size of the level trainers' parties
 TRAINER_NB = [
     [1],
-    [3, 2]
+    [3, 2],
+    [1, 4, 2]
 ]
 
 

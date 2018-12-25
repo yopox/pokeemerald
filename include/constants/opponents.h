@@ -860,7 +860,11 @@
 #define TRAINER_L1_1            855
 #define TRAINER_L2_1            856
 #define TRAINER_L2_2            857
+#define TRAINER_L3_1            858
+#define TRAINER_L3_2            859
+#define TRAINER_L3_3            860
+#define TRAINER_L4_1            861
 
-#define TRAINERS_COUNT          858
+#define TRAINERS_COUNT          862
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

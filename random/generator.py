@@ -9,8 +9,8 @@ class Generator():
     def __init__(self):
         items.computeWeights()
         levels.computeWeights()
-        self.LEVEL_NB = 2
-        self.BALL_PER_LEVEL = 2
+        self.LEVEL_NB = 3
+        self.BALL_PER_LEVEL = [2, 2, 3]
         self.LEVEL_ORDER = [i for i in range(1, self.LEVEL_NB+1)]
         random.shuffle(self.LEVEL_ORDER)
 
@@ -24,7 +24,7 @@ Level_{level}_Ball_{id}::
     def genBalls(self):
         balls = "@ balls\n"
         for x in self.LEVEL_ORDER:
-            for y in range(self.BALL_PER_LEVEL):
+            for y in range(self.BALL_PER_LEVEL[x - 1]):
                 balls += self.genBall(x, y+1)
         return balls + "\n"
 

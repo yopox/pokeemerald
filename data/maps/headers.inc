@@ -519,3 +519,4 @@
 	.include "data/maps/Lobby/header.inc"
 	.include "data/maps/Level_1/header.inc"
 	.include "data/maps/Level_2/header.inc"
+	.include "data/maps/Level_3/header.inc"
