@@ -12052,4 +12052,60 @@ const struct Trainer gTrainers[] = {
         .partySize = 2,
         .party = {.ItemDefaultMoves = gTrainerParty_L3_3 }
     },
+
+    [TRAINER_L4_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GUITARIST,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerName = _("LUCAS"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 3,
+        .party = {.ItemDefaultMoves = gTrainerParty_L4_1 }
+    },
+
+    [TRAINER_L4_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
+        .trainerName = _("HENRI"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 4,
+        .party = {.ItemDefaultMoves = gTrainerParty_L4_2 }
+    },
+
+    [TRAINER_L4_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_INTERVIEWER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_INTERVIEWER,
+        .trainerName = _("PATRICK"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 2,
+        .party = {.ItemDefaultMoves = gTrainerParty_L4_3 }
+    },
+
+    [TRAINER_L4_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
+        .trainerName = _("CHLOE"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 4,
+        .party = {.ItemDefaultMoves = gTrainerParty_L4_4 }
+    },
 };

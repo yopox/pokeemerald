@@ -4236,6 +4236,8 @@ const struct WildPokemonHeader gWildMonHeaders[] =
         .rockSmashMonsInfo = NULL,
         .fishingMonsInfo = NULL,
     },
+    // RANDOMIZER WILD ENCOUNTERS
+
     {
         .mapGroup = MAP_GROUP(LEVEL_1),
         .mapNum = MAP_NUM(LEVEL_1),
@@ -4256,6 +4258,14 @@ const struct WildPokemonHeader gWildMonHeaders[] =
         .mapGroup = MAP_GROUP(LEVEL_3),
         .mapNum = MAP_NUM(LEVEL_3),
         .landMonsInfo = &gL3_LandMonsInfo,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(LEVEL_4),
+        .mapNum = MAP_NUM(LEVEL_4),
+        .landMonsInfo = &gL4_LandMonsInfo,
         .waterMonsInfo = NULL,
         .rockSmashMonsInfo = NULL,
         .fishingMonsInfo = NULL,

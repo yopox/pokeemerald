@@ -539,3 +539,5 @@
 	.include "data/maps/Level_2/events.inc"
 
 	.include "data/maps/Level_3/events.inc"
+
+	.include "data/maps/Level_4/events.inc"

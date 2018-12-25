@@ -9,8 +9,7 @@ class Generator():
     def __init__(self):
         items.computeWeights()
         levels.computeWeights()
-        self.LEVEL_NB = 3
-        self.BALL_PER_LEVEL = [2, 2, 3]
+        self.LEVEL_NB = len(levels.STARTING_POS)
         self.LEVEL_ORDER = [i for i in range(1, self.LEVEL_NB+1)]
         random.shuffle(self.LEVEL_ORDER)
 
@@ -24,7 +23,7 @@ Level_{level}_Ball_{id}::
     def genBalls(self):
         balls = "@ balls\n"
         for x in self.LEVEL_ORDER:
-            for y in range(self.BALL_PER_LEVEL[x - 1]):
+            for y in range(levels.BALL_PER_LEVEL[x - 1]):
                 balls += self.genBall(x, y+1)
         return balls + "\n"
 
@@ -111,10 +110,54 @@ const struct WildPokemonInfo gL{levelID}_LandMonsInfo = {{{random.randint(5,15)}
             encounters += self.genEncounter(i+1, self.LEVEL_ORDER[i])
         return encounters + "\n"
 
-    def getStarters(self):
+    def genStarters(self):
         starters = ""
         for i in range(3):
             starters += poke.getRandomPokemon()
             if i < 2:
                 starters += ",\n    "
         return starters + "\n"
+
+    def genFlags(self):
+        flags = "// RANDOMIZER FLAGS\n"
+        address = 0x1000
+        for level in self.LEVEL_ORDER:
+            for b in range(levels.BALL_PER_LEVEL[level-1]):
+                flags += f"#define FLAG_L{level}_BALL_{b+1}        {format(address, '#04x')}\n"
+                address += 1
+            for t in range(len(levels.TRAINER_NB[level-1])):
+                flags += f"#define FLAG_L{level}_TRAINER_{t+1}     {format(address, '#04x')}\n"
+                address += 1
+        return flags + "\n"
+
+    def genOpponents(self):
+        opponents = "// RANDOMIZER OPPONENTS\n"
+        address = 855
+        for level in self.LEVEL_ORDER:
+            for t in range(len(levels.TRAINER_NB[level-1])):
+                opponents += f"#define TRAINER_L{level}_{t+1}          {address}\n"
+                address += 1
+        return opponents + f"#define TRAINERS_COUNT         {address}\n\n"
+
+    def genWE(self):
+        we = "// RANDOMIZER WILD ENCOUNTERS\n"
+        for i in range(self.LEVEL_NB):
+            we += f"""
+    {{
+        .mapGroup = MAP_GROUP(LEVEL_{i+1}),
+        .mapNum = MAP_NUM(LEVEL_{i+1}),
+        .landMonsInfo = &gL{i+1}_LandMonsInfo,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    }},"""
+        return we + """
+    {
+        .mapGroup = MAP_GROUP(UNDEFINED),
+        .mapNum = MAP_NUM(UNDEFINED),
+        .landMonsInfo = NULL,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+};"""

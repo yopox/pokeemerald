@@ -445,3 +445,4 @@ gMapLayouts::
 	.4byte Level_1_Layout
 	.4byte Level_2_Layout
 	.4byte Level_3_Layout
+	.4byte Level_4_Layout

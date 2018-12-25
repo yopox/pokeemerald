@@ -10623,3 +10623,6 @@ gText_082C877B:: @ 82C877B
 
 	.include "data/maps/Level_3/scripts.inc"
 	.include "data/maps/Level_3/text.inc"
+
+	.include "data/maps/Level_4/scripts.inc"
+	.include "data/maps/Level_4/text.inc"

@@ -857,14 +857,17 @@
 #define TRAINER_BRENDAN_16      853
 #define TRAINER_MAY_16          854
 
-#define TRAINER_L1_1            855
-#define TRAINER_L2_1            856
-#define TRAINER_L2_2            857
-#define TRAINER_L3_1            858
-#define TRAINER_L3_2            859
-#define TRAINER_L3_3            860
-#define TRAINER_L4_1            861
-
-#define TRAINERS_COUNT          862
+// RANDOMIZER OPPONENTS
+#define TRAINER_L4_1          855
+#define TRAINER_L4_2          856
+#define TRAINER_L4_3          857
+#define TRAINER_L4_4          858
+#define TRAINER_L3_1          859
+#define TRAINER_L3_2          860
+#define TRAINER_L3_3          861
+#define TRAINER_L1_1          862
+#define TRAINER_L2_1          863
+#define TRAINER_L2_2          864
+#define TRAINERS_COUNT         865
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

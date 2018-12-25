@@ -36,5 +36,7 @@
     - [x] 1 objet random au sol
 - [ ] v0.2
     - [x] Nombre de balls dépendant du level
+    - [x] Automatic flag generation
+    - [ ] Automatic wild encounters generation
     - [ ] 10 levels
     - [ ] Afficher le numéro de route
