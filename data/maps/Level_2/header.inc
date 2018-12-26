@@ -8,7 +8,7 @@ Level_2::
 	.byte MAPSEC_LITTLEROOT_TOWN
 	.byte FALSE
 	.byte WEATHER_FOG_1
-	.byte MAP_TYPE_INDOOR
+	.byte MAP_TYPE_ROUTE
 	.2byte 0
 	.byte TRUE
 	.byte MAP_BATTLE_SCENE_NORMAL

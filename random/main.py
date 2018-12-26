@@ -6,15 +6,6 @@ random.seed()
 
 gen = generator.Generator()
 
-# Flags
-
-old_file = ""
-with open("include/constants/flags.h", "r") as starter_choose:
-    old_file = starter_choose.read()
-
-with open("include/constants/flags.h", "w") as starter_choose:
-    starter_choose.write(re.sub(r"\/\/ RANDOMIZER FLAGS\n([#a-zA-Z _0-9]+\n)*", gen.genFlags(), old_file))
-
 # Balls and warps
 
 random_scripts = open("random/scripts.inc", "w")

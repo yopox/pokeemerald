@@ -2,17 +2,13 @@
 
 `python3 random/main.py ; make`
 
-# Fichiers utiles
+# Proof of concept
 
-- `src/data/trainers.h` : Liste des dresseurs
-- `src/data/trainer_parties.h` : Liste des équipes des dresseurs
-- `data/maps` : Metadata des maps
-- `data/layouts` : Mapping
-- `data/text/birch_speech.inc` : Texte d'explication au début d'une partie
-- `data/event_scripts.s` : Beaucoup de scripts
-- `src/data/pokemon/evolution.h` : Évolution des pokémon
-- `src/data/items.h` : Liste des objets avec leurs propriétés (prix, …)
-- `src/new_game.c` : Script de début de partie
+This is a test for a roguelike romhack of pokémon emerald.
+
+## Rules
+
+You can choose a random starter and spend money in the lobby (first map). Then there are 9 levels in a random order with randomized items, wild encounters and trainers. In the level X, all enemies are at level X. The goal is to clear these levels with as little white outs as possible (there is a death counter in the save menu).
 
 # TODO
 
@@ -35,9 +31,9 @@
     - [x] Random starters
     - [x] 1 random trainer
     - [x] 1 random ball
-- [ ] v0.2
+- [x] v0.2
     - [x] Non constant balls number
     - [x] Automatic flag generation
     - [x] Automatic wild encounters generation
-    - [ ] 10 levels
+    - [x] 10 levels
     - [x] Edit respawn point

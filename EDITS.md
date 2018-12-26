@@ -46,6 +46,8 @@ The balls scripts are called `Level_X_Ball_Y`.
 The corresponding flags are called `FLAX_LX_BALL_Y`.
 They are generated automatically.
 
+Set Ether price to 200P, Master Ball price to 20000P.
+
 ## Warps
 
 `random/scripts.inc` (`@ warps`).

@@ -59,7 +59,15 @@ Lobby_TeleportScript::
         # Level i to i+1
         for i in range(1, self.LEVEL_NB):
             warps += self.genWarp(self.LEVEL_ORDER[i-1], self.LEVEL_ORDER[i])
-        warps += self.genWarp(self.LEVEL_ORDER[-1], self.LEVEL_ORDER[-1])
+        warps += f"""
+Level_{self.LEVEL_ORDER[-1]}_Warp::
+    lock
+    faceplayer
+    warpteleport MAP_EVER_GRANDE_CITY_HALL_OF_FAME, 255, 7, 16
+    waitstate
+    releaseall
+    end
+"""
         # Warp message
         warps += f"""
 Level_WarpMessage:
@@ -118,19 +126,6 @@ const struct WildPokemonInfo gL{levelID}_LandMonsInfo = {{{random.randint(5,15)}
                 starters += ",\n    "
         return starters + "\n"
 
-    def genFlags(self):
-        flags = "// RANDOMIZER FLAGS\n"
-        flags += "#define FLAG_LOBBY_STARTER        0x1000\n"
-        address = 0x1001
-        for level in self.LEVEL_ORDER:
-            for b in range(levels.BALL_PER_LEVEL[level-1]):
-                flags += f"#define FLAG_L{level}_BALL_{b+1}        {format(address, '#04x')}\n"
-                address += 1
-            for t in range(len(levels.TRAINER_NB[level-1])):
-                flags += f"#define FLAG_L{level}_TRAINER_{t+1}     {format(address, '#04x')}\n"
-                address += 1
-        return flags
-
     def genOpponents(self):
         opponents = "// RANDOMIZER OPPONENTS\n"
         address = 855
@@ -143,14 +138,15 @@ const struct WildPokemonInfo gL{levelID}_LandMonsInfo = {{{random.randint(5,15)}
     def genWE(self):
         we = "// RANDOMIZER WILD ENCOUNTERS\n"
         for i in range(self.LEVEL_NB):
+            
             we += f"""
     {{
         .mapGroup = MAP_GROUP(LEVEL_{i+1}),
         .mapNum = MAP_NUM(LEVEL_{i+1}),
         .landMonsInfo = &gL{i+1}_LandMonsInfo,
-        .waterMonsInfo = NULL,
+        .waterMonsInfo = &gL{i+1}_LandMonsInfo,
         .rockSmashMonsInfo = NULL,
-        .fishingMonsInfo = NULL,
+        .fishingMonsInfo = &gL{i+1}_LandMonsInfo,
     }},"""
         return we + """
     {

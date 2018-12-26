@@ -19,12 +19,13 @@ Lobby_MartScript::
 Lobby_Mart:
 	.2byte ITEM_POTION
 	.2byte ITEM_POKE_BALL
+	.2byte ITEM_ETHER
+	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_BURN_HEAL
 	.2byte ITEM_ICE_HEAL
 	.2byte ITEM_AWAKENING
-	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_NONE
 	release
 	end
@@ -44,7 +45,7 @@ Lobby_BeautyMessage:
 Lobby_Bag::
 	lock
 	faceplayer
-	checkflag FLAG_LOBBY_STARTER
+	checkflag FLAG_0x493
 	call_if 0, Lobby_StarterScript
 	release
 	end
@@ -64,7 +65,7 @@ Lobby_StarterScript:
 	msgbox Lobby_RenameMessage, MSGBOX_YESNO
 	switch VAR_RESULT
 	case 1, Lobby_RenameScript
-	setflag FLAG_LOBBY_STARTER
+	setflag FLAG_0x493
 	release
 	end
 
@@ -81,9 +82,9 @@ Lobby_RenameScript:
 Lobby_PreWarp::
 	lock
 	faceplayer
-	checkflag FLAG_LOBBY_STARTER
+	checkflag FLAG_0x493
 	call_if 0, Lobby_PreWarp0
-	checkflag FLAG_LOBBY_STARTER
+	checkflag FLAG_0x493
 	call_if 1, Lobby_Warp
 	release
 	end

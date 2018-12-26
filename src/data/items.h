@@ -24,7 +24,7 @@ const struct Item gItems[] =
     {
         .name = _("MASTER BALL"),
         .itemId = ITEM_MASTER_BALL,
-        .price = 0,
+        .price = 20000,
         .holdEffect = HOLD_EFFECT_NONE,
         .holdEffectParam = 0,
         .description = gMasterBallItemDescription,
@@ -620,7 +620,7 @@ const struct Item gItems[] =
     {
         .name = _("ETHER"),
         .itemId = ITEM_ETHER,
-        .price = 1200,
+        .price = 200,
         .holdEffect = HOLD_EFFECT_NONE,
         .holdEffectParam = 10,
         .description = gEtherItemDescription,
