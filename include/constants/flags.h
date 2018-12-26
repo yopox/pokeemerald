@@ -1503,35 +1503,50 @@
 #define FLAG_0x95F               (SYSTEM_FLAGS + 0xFF)
 
 // RANDOMIZER FLAGS
-#define FLAG_L4_BALL_1        0x1000
-#define FLAG_L4_BALL_2        0x1001
-#define FLAG_L4_BALL_3        0x1002
-#define FLAG_L4_BALL_4        0x1003
-#define FLAG_L4_TRAINER_1     0x1004
-#define FLAG_L4_TRAINER_2     0x1005
-#define FLAG_L4_TRAINER_3     0x1006
-#define FLAG_L4_TRAINER_4     0x1007
-#define FLAG_L3_BALL_1        0x1008
-#define FLAG_L3_BALL_2        0x1009
-#define FLAG_L3_BALL_3        0x100a
-#define FLAG_L3_TRAINER_1     0x100b
-#define FLAG_L3_TRAINER_2     0x100c
-#define FLAG_L3_TRAINER_3     0x100d
-#define FLAG_L1_BALL_1        0x100e
-#define FLAG_L1_BALL_2        0x100f
-#define FLAG_L1_TRAINER_1     0x1010
-#define FLAG_L2_BALL_1        0x1011
-#define FLAG_L2_BALL_2        0x1012
-#define FLAG_L2_TRAINER_1     0x1013
-#define FLAG_L2_TRAINER_2     0x1014
-
-
-
-
-
-
-
-
+#define FLAG_LOBBY_STARTER        0x1000
+#define FLAG_L6_BALL_1        0x1001
+#define FLAG_L6_BALL_2        0x1002
+#define FLAG_L6_BALL_3        0x1003
+#define FLAG_L6_TRAINER_1     0x1004
+#define FLAG_L6_TRAINER_2     0x1005
+#define FLAG_L6_TRAINER_3     0x1006
+#define FLAG_L4_BALL_1        0x1007
+#define FLAG_L4_BALL_2        0x1008
+#define FLAG_L4_BALL_3        0x1009
+#define FLAG_L4_BALL_4        0x100a
+#define FLAG_L4_TRAINER_1     0x100b
+#define FLAG_L4_TRAINER_2     0x100c
+#define FLAG_L4_TRAINER_3     0x100d
+#define FLAG_L4_TRAINER_4     0x100e
+#define FLAG_L5_BALL_1        0x100f
+#define FLAG_L5_BALL_2        0x1010
+#define FLAG_L5_TRAINER_1     0x1011
+#define FLAG_L1_BALL_1        0x1012
+#define FLAG_L1_BALL_2        0x1013
+#define FLAG_L1_TRAINER_1     0x1014
+#define FLAG_L9_BALL_1        0x1015
+#define FLAG_L9_BALL_2        0x1016
+#define FLAG_L9_BALL_3        0x1017
+#define FLAG_L9_BALL_4        0x1018
+#define FLAG_L9_BALL_5        0x1019
+#define FLAG_L9_TRAINER_1     0x101a
+#define FLAG_L9_TRAINER_2     0x101b
+#define FLAG_L7_BALL_1        0x101c
+#define FLAG_L7_BALL_2        0x101d
+#define FLAG_L7_TRAINER_1     0x101e
+#define FLAG_L3_BALL_1        0x101f
+#define FLAG_L3_BALL_2        0x1020
+#define FLAG_L3_BALL_3        0x1021
+#define FLAG_L3_TRAINER_1     0x1022
+#define FLAG_L3_TRAINER_2     0x1023
+#define FLAG_L3_TRAINER_3     0x1024
+#define FLAG_L2_BALL_1        0x1025
+#define FLAG_L2_BALL_2        0x1026
+#define FLAG_L2_TRAINER_1     0x1027
+#define FLAG_L2_TRAINER_2     0x1028
+#define FLAG_L8_BALL_1        0x1029
+#define FLAG_L8_BALL_2        0x102a
+#define FLAG_L8_TRAINER_1     0x102b
 
 #define SPECIAL_FLAGS_START 0x4000
 // SPECIAL FLAGS (unknown purpose)

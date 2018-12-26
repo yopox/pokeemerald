@@ -521,3 +521,8 @@
 	.include "data/maps/Level_2/header.inc"
 	.include "data/maps/Level_3/header.inc"
 	.include "data/maps/Level_4/header.inc"
+	.include "data/maps/Level_5/header.inc"
+	.include "data/maps/Level_6/header.inc"
+	.include "data/maps/Level_7/header.inc"
+	.include "data/maps/Level_8/header.inc"
+	.include "data/maps/Level_9/header.inc"

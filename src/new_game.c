@@ -135,7 +135,7 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    Overworld_SetWarpDestination(34, 0, -1, 2, 6); // inside of truck
+    Overworld_SetWarpDestination(34, 0, -1, 2, 6);
     WarpIntoMap();
 }
 
@@ -178,7 +178,7 @@ void NewGameInitData(void)
     ResetGabbyAndTy();
     ResetSecretBases();
     ClearBerryTrees();
-    SetMoney(&gSaveBlock1Ptr->money, 3000);
+    SetMoney(&gSaveBlock1Ptr->money, 10000);
     SetCoins(0);
     ResetLinkContestBoolean();
     ResetGameStats();

@@ -593,6 +593,11 @@
 #define MAP_LEVEL_2 (2 | (34 << 8))
 #define MAP_LEVEL_3 (3 | (34 << 8))
 #define MAP_LEVEL_4 (4 | (34 << 8))
+#define MAP_LEVEL_5 (5 | (34 << 8))
+#define MAP_LEVEL_6 (6 | (34 << 8))
+#define MAP_LEVEL_7 (7 | (34 << 8))
+#define MAP_LEVEL_8 (8 | (34 << 8))
+#define MAP_LEVEL_9 (9 | (34 << 8))
 
 
 #define MAP_NONE (0x7F | (0x7F << 8))

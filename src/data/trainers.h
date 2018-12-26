@@ -12108,4 +12108,88 @@ const struct Trainer gTrainers[] = {
         .partySize = 4,
         .party = {.ItemDefaultMoves = gTrainerParty_L4_4 }
     },
+
+    [TRAINER_L5_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerName = _("LEE"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 2,
+        .party = {.ItemDefaultMoves = gTrainerParty_L5_1 }
+    },
+
+    [TRAINER_L6_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerName = _("SALTY CALU"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 3,
+        .party = {.ItemDefaultMoves = gTrainerParty_L6_1 }
+    },
+
+    [TRAINER_L6_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerName = _("JASON"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 2,
+        .party = {.ItemDefaultMoves = gTrainerParty_L6_2 }
+    },
+
+    [TRAINER_L6_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_EXPERT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_EXPERT_F,
+        .trainerName = _("SABINE"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 3,
+        .party = {.ItemDefaultMoves = gTrainerParty_L6_3 }
+    },
+
+    [TRAINER_L7_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_HIKER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerName = _("PIERRE"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 2,
+        .party = {.ItemDefaultMoves = gTrainerParty_L7_1 }
+    },
+
+    [TRAINER_L8_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_TUBER_F,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = TRAINER_PIC_TUBER_F,
+        .trainerName = _("TESSA"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 2,
+        .party = {.ItemDefaultMoves = gTrainerParty_L8_1 }
+    },
 };

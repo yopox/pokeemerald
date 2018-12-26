@@ -10626,3 +10626,18 @@ gText_082C877B:: @ 82C877B
 
 	.include "data/maps/Level_4/scripts.inc"
 	.include "data/maps/Level_4/text.inc"
+
+	.include "data/maps/Level_5/scripts.inc"
+	.include "data/maps/Level_5/text.inc"
+
+	.include "data/maps/Level_6/scripts.inc"
+	.include "data/maps/Level_6/text.inc"
+
+	.include "data/maps/Level_7/scripts.inc"
+	.include "data/maps/Level_7/text.inc"
+
+	.include "data/maps/Level_8/scripts.inc"
+	.include "data/maps/Level_8/text.inc"
+
+	.include "data/maps/Level_9/scripts.inc"
+	.include "data/maps/Level_9/text.inc"

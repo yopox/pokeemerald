@@ -17,26 +17,27 @@
 # TODO
 
 - [ ] Misc
-    - [ ] Changer les évolutions par échange
-    - [ ] Changer le dialogue de départ
-    - [ ] Changer les options initiales (stereo, texte rapide)
-    - [ ] Donner les chaussures de sport
-    - [ ] Enlever les items inutiles
+    - [ ] Change impossible evolutions
+    - [ ] Edit starting speech
+    - [ ] Edit initial options (text speed, …)
+    - [ ] Give running shoes in the lobby
+    - [ ] Remove useless items
+    - [ ] Display level names ("LEVEL X")
 - [x] v0.1
-    - [x] Enlever le script du camion
-    - [x] Créer un groupe de maps
-    - [x] Changer la position de départ du joueur
-    - [x] Créer un lobby
-    - [x] Créer la boutique de départ
-    - [x] Éditer le script de choix du poké de départ
-    - [x] Créer deux maps de test
-    - [x] Hautes herbes random
-    - [x] Pokémon de départ random
-    - [x] 1 Dresseur random
-    - [x] 1 objet random au sol
+    - [x] Remove truck script
+    - [x] Create a map group
+    - [x] Change the initial player position
+    - [x] Create a lobby
+    - [x] Edit the starting shop
+    - [x] Edit starter pick script
+    - [x] Create two test maps
+    - [x] Random wild encounters
+    - [x] Random starters
+    - [x] 1 random trainer
+    - [x] 1 random ball
 - [ ] v0.2
-    - [x] Nombre de balls dépendant du level
+    - [x] Non constant balls number
     - [x] Automatic flag generation
-    - [ ] Automatic wild encounters generation
+    - [x] Automatic wild encounters generation
     - [ ] 10 levels
-    - [ ] Afficher le numéro de route
+    - [x] Edit respawn point

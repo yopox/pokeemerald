@@ -625,6 +625,11 @@ gMapGroup34::
 	.4byte Level_2
 	.4byte Level_3
 	.4byte Level_4
+	.4byte Level_5
+	.4byte Level_6
+	.4byte Level_7
+	.4byte Level_8
+	.4byte Level_9
 
 	.align 2
 gMapGroups::

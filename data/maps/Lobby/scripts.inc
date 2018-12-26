@@ -1,5 +1,10 @@
 Lobby_MapScripts::
+	map_script 3, Lobby_Spawn
 	.byte 0
+
+Lobby_Spawn:
+	setrespawn HEAL_LOCATION_LOBBY
+	end
 
 Lobby_MartScript::
 	lock
@@ -15,6 +20,9 @@ Lobby_Mart:
 	.2byte ITEM_POTION
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_ICE_HEAL
 	.2byte ITEM_AWAKENING
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_NONE
@@ -36,6 +44,12 @@ Lobby_BeautyMessage:
 Lobby_Bag::
 	lock
 	faceplayer
+	checkflag FLAG_LOBBY_STARTER
+	call_if 0, Lobby_StarterScript
+	release
+	end
+
+Lobby_StarterScript:
 	@ Starter choice
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_0x052
@@ -49,9 +63,8 @@ Lobby_Bag::
 	@ Rename choice
 	msgbox Lobby_RenameMessage, MSGBOX_YESNO
 	switch VAR_RESULT
-	case 0, Lobby_TeleportScript
 	case 1, Lobby_RenameScript
-	case 127, Lobby_TeleportScript
+	setflag FLAG_LOBBY_STARTER
 	release
 	end
 
@@ -64,3 +77,27 @@ Lobby_RenameScript:
 	waitstate
 	goto Lobby_TeleportScript
 	end
+
+Lobby_PreWarp::
+	lock
+	faceplayer
+	checkflag FLAG_LOBBY_STARTER
+	call_if 0, Lobby_PreWarp0
+	checkflag FLAG_LOBBY_STARTER
+	call_if 1, Lobby_Warp
+	release
+	end
+
+Lobby_Warp:
+    msgbox Level_WarpMessage, MSGBOX_YESNO
+    switch VAR_RESULT
+    case 1, Lobby_TeleportScript
+	release
+    end
+
+Lobby_PreWarp0:
+	msgbox Lobby_Warning, MSGBOX_NPC
+	end
+
+Lobby_Warning:
+	.string "Choose a starter first.$"

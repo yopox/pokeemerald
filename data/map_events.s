@@ -541,3 +541,13 @@
 	.include "data/maps/Level_3/events.inc"
 
 	.include "data/maps/Level_4/events.inc"
+
+	.include "data/maps/Level_5/events.inc"
+
+	.include "data/maps/Level_6/events.inc"
+
+	.include "data/maps/Level_7/events.inc"
+
+	.include "data/maps/Level_8/events.inc"
+
+	.include "data/maps/Level_9/events.inc"

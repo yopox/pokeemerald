@@ -120,7 +120,8 @@ const struct WildPokemonInfo gL{levelID}_LandMonsInfo = {{{random.randint(5,15)}
 
     def genFlags(self):
         flags = "// RANDOMIZER FLAGS\n"
-        address = 0x1000
+        flags += "#define FLAG_LOBBY_STARTER        0x1000\n"
+        address = 0x1001
         for level in self.LEVEL_ORDER:
             for b in range(levels.BALL_PER_LEVEL[level-1]):
                 flags += f"#define FLAG_L{level}_BALL_{b+1}        {format(address, '#04x')}\n"
@@ -128,7 +129,7 @@ const struct WildPokemonInfo gL{levelID}_LandMonsInfo = {{{random.randint(5,15)}
             for t in range(len(levels.TRAINER_NB[level-1])):
                 flags += f"#define FLAG_L{level}_TRAINER_{t+1}     {format(address, '#04x')}\n"
                 address += 1
-        return flags + "\n"
+        return flags
 
     def genOpponents(self):
         opponents = "// RANDOMIZER OPPONENTS\n"

@@ -858,16 +858,24 @@
 #define TRAINER_MAY_16          854
 
 // RANDOMIZER OPPONENTS
-#define TRAINER_L4_1          855
-#define TRAINER_L4_2          856
-#define TRAINER_L4_3          857
-#define TRAINER_L4_4          858
-#define TRAINER_L3_1          859
-#define TRAINER_L3_2          860
-#define TRAINER_L3_3          861
-#define TRAINER_L1_1          862
-#define TRAINER_L2_1          863
-#define TRAINER_L2_2          864
-#define TRAINERS_COUNT         865
+#define TRAINER_L6_1          855
+#define TRAINER_L6_2          856
+#define TRAINER_L6_3          857
+#define TRAINER_L4_1          858
+#define TRAINER_L4_2          859
+#define TRAINER_L4_3          860
+#define TRAINER_L4_4          861
+#define TRAINER_L5_1          862
+#define TRAINER_L1_1          863
+#define TRAINER_L9_1          864
+#define TRAINER_L9_2          865
+#define TRAINER_L7_1          866
+#define TRAINER_L3_1          867
+#define TRAINER_L3_2          868
+#define TRAINER_L3_3          869
+#define TRAINER_L2_1          870
+#define TRAINER_L2_2          871
+#define TRAINER_L8_1          872
+#define TRAINERS_COUNT         873
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

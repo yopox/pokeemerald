@@ -15,3 +15,4 @@ Level_3_Trainer_3::
 	trainerbattle_single TRAINER_L3_3, Route121_Text_29F6E4, Route121_Text_29F710
 	msgbox Route121_Text_29F740, MSGBOX_AUTOCLOSE
 	end
+	

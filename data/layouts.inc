@@ -444,3 +444,8 @@
 	.include "data/layouts/Level_2/layout.inc"
 	.include "data/layouts/Level_3/layout.inc"
 	.include "data/layouts/Level_4/layout.inc"
+	.include "data/layouts/Level_5/layout.inc"
+	.include "data/layouts/Level_6/layout.inc"
+	.include "data/layouts/Level_7/layout.inc"
+	.include "data/layouts/Level_8/layout.inc"
+	.include "data/layouts/Level_9/layout.inc"

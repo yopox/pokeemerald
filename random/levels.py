@@ -8,6 +8,11 @@ POSSIBLE_TYPES = [
     [[Type.TYPE_GHOST, 4], [Type.TYPE_PSYCHIC, 2], [Type.TYPE_DARK, 1]],
     [[Type.TYPE_GHOST, 1], [Type.TYPE_NORMAL, 3], [Type.TYPE_DARK, 2], [Type.TYPE_GRASS, 3], [Type.TYPE_FLYING, 1]],
     [[Type.TYPE_GHOST, 1], [Type.TYPE_NORMAL, 2], [Type.TYPE_GRASS, 1], [Type.TYPE_FLYING, 1]],
+    [[Type.TYPE_ROCK, 6], [Type.TYPE_FLYING, 2], [Type.TYPE_FIGHTING, 1]],
+    [[Type.TYPE_ROCK, 1], [Type.TYPE_GROUND, 1], [Type.TYPE_ICE, 5]],
+    [[Type.TYPE_ROCK, 1], [Type.TYPE_FIRE, 5]],
+    [[Type.TYPE_WATER, 1]],
+    [[Type.TYPE_BUG, 4], [Type.TYPE_GRASS, 1]],
 ]
 
 WEIGHT = [0 for pt in POSSIBLE_TYPES]
@@ -16,10 +21,15 @@ STARTING_POS = [
     [10, 17],
     [2, 6],
     [4, 10],
-    [51, 15]
+    [51, 15],
+    [9, 16],
+    [8, 10],
+    [9, 11],
+    [6, 17],
+    [16, 28],
 ]
 
-BALL_PER_LEVEL = [2, 2, 3, 4]
+BALL_PER_LEVEL = [2, 2, 3, 4, 2, 3, 2, 2, 5]
 
 # TRAINER_NB[level] gives the size of the level trainers' parties
 TRAINER_NB = [
@@ -27,6 +37,11 @@ TRAINER_NB = [
     [3, 2],
     [1, 4, 2],
     [3, 4, 2, 4],
+    [2],
+    [3, 2, 3],
+    [3],
+    [2],
+    [5, 1],
 ]
 
 
