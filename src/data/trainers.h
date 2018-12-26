@@ -12192,4 +12192,32 @@ const struct Trainer gTrainers[] = {
         .partySize = 2,
         .party = {.ItemDefaultMoves = gTrainerParty_L8_1 }
     },
+
+    [TRAINER_L9_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerName = _("CKUF"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 5,
+        .party = {.ItemDefaultMoves = gTrainerParty_L9_1 }
+    },
+
+    [TRAINER_L9_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerName = _("ENZO"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = 1,
+        .party = {.ItemDefaultMoves = gTrainerParty_L9_2 }
+    },
 };

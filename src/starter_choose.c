@@ -125,9 +125,9 @@ static const u8 gStarterChoose_LabelCoords[][2] =
 
 static const u16 sStarterMon[STARTER_MON_COUNT] =
 {
-    SPECIES_CLEFABLE,
-    SPECIES_RAPIDASH,
-    SPECIES_ZANGOOSE
+    SPECIES_PICHU,
+    SPECIES_GASTLY,
+    SPECIES_PERSIAN
 };
 
 static const struct BgTemplate gUnknown_085B1E00[3] =

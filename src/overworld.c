@@ -1608,6 +1608,7 @@ void CB2_WhiteOut(void)
         StopMapMusic();
         ResetSafariZoneFlag_();
         DoWhiteOut();
+        IncrementGameStat(52);
         ResetInitialPlayerAvatarState();
         ScriptContext1_Init();
         ScriptContext2_Disable();

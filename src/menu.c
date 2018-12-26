@@ -2417,11 +2417,7 @@ void sub_819A344(u8 a0, u8 *dest, u8 color)
             sub_81245DC(string, gMapHeader.regionMapSectionId);
             break;
         case 4:
-            for (curFlag = FLAG_BADGE01_GET, flagCount = 0, endOfString = string + 1; curFlag <= FLAG_BADGE08_GET; curFlag++)
-            {
-                if (FlagGet(curFlag))
-                    flagCount++;
-            }
+            flagCount = GetGameStat(52);
             *string = flagCount + CHAR_0;
             *endOfString = EOS;
             break;

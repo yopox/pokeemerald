@@ -94,5 +94,6 @@ s8 Menu_ProcessInputGridLayout(void);
 u8 InitMenuInUpperLeftCorner(u8 windowId, u8 itemCount, u8 initialCursorPos, bool8 APressMuted);
 s8 Menu_ProcessInputNoWrapAround_other(void);
 void sub_8199CBC(u8 bgId, u16 *dest, u8 left, u8 top, u8 width, u8 height);
+u32 GetGameStat(u8 index);
 
 #endif // GUARD_MENU_H

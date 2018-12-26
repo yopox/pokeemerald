@@ -2053,14 +2053,9 @@ static void MainMenu_FormatSavegamePokedex(void)
 static void MainMenu_FormatSavegameBadges(void)
 {
     u8 str[0x20];
-    u8 badgeCount = 0;
+    u8 badgeCount = GetGameStat(52);
     u32 i;
 
-    for (i = FLAG_BADGE01_GET; i <= FLAG_BADGE08_GET; i++)
-    {
-        if (FlagGet(i))
-            badgeCount++;
-    }
     StringExpandPlaceholders(gStringVar4, gText_ContinueMenuBadges);
     AddTextPrinterParameterized3(2, 1, 0x6C, 33, sTextColor_PlayerGenderColor, -1, gStringVar4);
     ConvertIntToDecimalStringN(str, badgeCount, 2, 1);
